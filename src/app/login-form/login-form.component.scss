@@ -8,6 +8,10 @@ $breakpoint-min-tablet: 600px;
 .middle {
     margin-top: 200px;
 }
+.btn{
+    margin-bottom: 25px !important;
+    font-size: 1em;
+}
 
 @media (max-width: $breakpoint-min-tablet) {
     .middle {
