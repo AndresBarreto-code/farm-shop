@@ -10,11 +10,23 @@ import { DataService } from '../services/data.service';
 })
 export class CatalogComponent implements OnInit {
 
+  productsInDb: ProductInterface[] = [];
   products: ProductInterface[] = [];
+  filter: string;
 
   constructor(private data: DataService) {}
 
   ngOnInit(): void {
-    this.data.getProducts((data: ProductInterface) => Object.keys(data).map((key) => this.products.push(data[key])))
+    this.data.getProducts((data: ProductInterface) => Object.keys(data).map((key) => this.productsInDb.push(data[key])));
+    this.products = this.productsInDb;
+  }
+
+  change(event) {       
+    this.products = [];
+    this.productsInDb.forEach((product) => {
+      if(product.name.toUpperCase().startsWith(event.toUpperCase())) {
+        this.products.push(product);
+      }
+    })
   }
 }

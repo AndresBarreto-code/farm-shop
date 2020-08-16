@@ -10,7 +10,7 @@
                     <h5>¿Qu&eacute; estas buscando?</h5>
                 </div>
                 <div class="col s12">
-                    <input class="left-align" type="text" placeholder="Digita tu producto">
+                    <input (ngModelChange)="change($event)" class="left-align" type="text" placeholder="Digita tu producto" [(ngModel)]="filter">
                 </div>
             </div>
         </div>
