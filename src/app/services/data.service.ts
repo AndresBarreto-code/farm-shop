@@ -24,7 +24,7 @@ export class DataService {
       () => { }
     )
   };
-  getProducts(callback) {
+  async getProducts(callback) {
     this.httpService.getProducts().subscribe(callback);
   };
 }
