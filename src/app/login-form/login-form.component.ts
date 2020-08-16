@@ -27,7 +27,7 @@ export class LoginFormComponent implements OnInit {
     if (this.formLogin.value.email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
       this.data.validateLogin(this.formLogin.value.email, this.formLogin.value.password,
         (result) => {
-          if (result === 'Ok') window.location.href = `${window.location.origin}/spa`;
+          if (result === 'Ok') window.location.href = `${window.location.origin}/spa/catalogo`;
           else this.error = true; 
         }
       );

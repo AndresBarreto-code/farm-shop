@@ -14,6 +14,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 
 import { HttpService } from './services/http.service';
 import { DataService } from './services/data.service';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DataService } from './services/data.service';
     LoginFormComponent,
     SpaComponent,
     NavComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
