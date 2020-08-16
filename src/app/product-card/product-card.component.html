@@ -1,18 +1,24 @@
 <div class="row">
-    <div class="col s12 m7">
+    <div class="col s12">
         <div class="card">
         <div class="card-image">
-            <img src="{{settings.image}}">
+            {{<img src="{{settings.image}}"> | imageSize}}
         </div>
         <div class="card-content">
             <span class="card-title">{{settings.name}}</span>
-            <p>Precio: {{settings.price}}</p>
+            <p>Precio: ${{settings.price}}</p>
             <p>Unidades disponibles: {{settings.stock}}</p>
-        </div>
-        <div class="card-action">
-            <a href="#">Ver mas</a>
-            <a href="#">Añadir al carrito</a>
-        </div>
+            <div class="row">
+                <div class="col s5 ">
+                    <a href="#" class="btn light-blue darken-4"><p>Ver mas</p></a>
+                </div>
+                <div class="col s3 ">
+                    <a href="#" class="btn orange darken-4"><p>Añadir</p></a>
+                </div>
+                <div class="col s4 ">
+                    <input class="center-align" type="number" placeholder="0">
+                </div>
+            </div>
         </div>
     </div>
 </div>

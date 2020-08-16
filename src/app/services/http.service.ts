@@ -10,8 +10,8 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  getInfo() {
-    return this.http.get('https://farm-store-3487f.firebaseio.com/.json');
+  getProducts() {
+    return this.http.get('https://farm-store-3487f.firebaseio.com/Products.json');
   }
 
   postInfo(endLine: string, data: Object) {

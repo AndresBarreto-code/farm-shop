@@ -23,5 +23,8 @@ export class DataService {
       (err) => console.log(err),
       () => { }
     )
-  }
+  };
+  getProducts(callback) {
+    this.httpService.getProducts().subscribe(callback);
+  };
 }

@@ -15,6 +15,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { HttpService } from './services/http.service';
 import { DataService } from './services/data.service';
 import { CatalogComponent } from './catalog/catalog.component';
+import { ImageSizePipe } from './pipes/image-size.pipe';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CatalogComponent } from './catalog/catalog.component';
     SpaComponent,
     NavComponent,
     ProductCardComponent,
-    CatalogComponent
+    CatalogComponent,
+    ImageSizePipe
   ],
   imports: [
     BrowserModule,
