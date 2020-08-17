@@ -1,0 +1,127 @@
+
+    [{
+      name: 'Aguacate',
+      image: '../assets/aguacate.jpg',
+      price: 15,
+      stock: 10
+    },
+    {
+      name: 'Ajo',
+      image: '../assets/ajo.jpg',
+      price: 2,
+      stock: 100
+    },
+    {
+      name: 'Almendras',
+      image: '../assets/almendras.jpg',
+      price: 20,
+      stock: 30
+    },
+    {
+      name: 'Arandanos',
+      image: '../assets/arandanos.jpg',
+      price: 25,
+      stock: 12
+    },
+    {
+      name: 'Brocoli',
+      image: '../assets/brocoli.png',
+      price: 5,
+      stock: 13
+    },
+    {
+      name: 'Calabaza',
+      image: '../assets/calabaza.jpg',
+      price: 19,
+      stock: 18
+    },
+    {
+      name: 'Canela',
+      image: '../assets/canela.jpg',
+      price: 8,
+      stock: 210
+    },
+    {
+      name: 'Cebolla',
+      image: '../assets/cebolla.jpg',
+      price: 90,
+      stock: 6
+    },
+    {
+      name: 'Fresa',
+      image: '../assets/fresa.jpg',
+      price: 22,
+      stock: 9
+    },
+    {
+      name: 'Kiwi',
+      image: '../assets/kiwi.jpg',
+      price: 15,
+      stock: 10
+    },
+    {
+      name: 'Limon',
+      image: '../assets/limon.jpg',
+      price: 15,
+      stock: 10
+    },
+    {
+      name: 'Lychee',
+      image: '../assets/lychee.jpg',
+      price: 2,
+      stock: 100
+    },
+    {
+      name: 'Maiz',
+      image: '../assets/maiz.jpg',
+      price: 20,
+      stock: 30
+    },
+    {
+      name: 'Manzana',
+      image: '../assets/manzana.jpg',
+      price: 25,
+      stock: 12
+    },
+    {
+      name: 'Naranja',
+      image: '../assets/naranja.jpg',
+      price: 5,
+      stock: 13
+    },
+    {
+      name: 'Papa',
+      image: '../assets/papa.jpg',
+      price: 19,
+      stock: 18
+    },
+    {
+      name: 'Pasta',
+      image: '../assets/pasta.jpg',
+      price: 8,
+      stock: 210
+    },
+    {
+      name: 'Pimienta',
+      image: '../assets/pimienta.jpg',
+      price: 90,
+      stock: 6
+    },
+    {
+      name: 'Repollo',
+      image: '../assets/repollo.jpg',
+      price: 22,
+      stock: 9
+    },
+    {
+      name: 'Tomate',
+      image: '../assets/tomate.jpg',
+      price: 15,
+      stock: 10
+    },
+    {
+      name: 'Zanahoria',
+      image: '../assets/zanahoria.jpg',
+      price: 15,
+      stock: 10
+    }]

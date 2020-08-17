@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { ProductShopInterface } from '../interfaces/product-shop-interface';
+import { ProductInterface } from '../interfaces/product-interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -11,8 +13,9 @@ export class ShopComponent implements OnInit {
 
   productos: ProductShopInterface[] = [];
   total: number = 0;
+  newProducts: ProductInterface[] = [];
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, private router: Router) { }
 
   ngOnInit(): void {
     this.productos = this.data.getShop();
@@ -22,7 +25,19 @@ export class ShopComponent implements OnInit {
   }
   pagar() {
     this.data.postShop();
-    this.productos = [];
-    
+    this.data.getProducts((data) => {
+      Object.keys(data).map((key) => {
+        this.productos.forEach(producto => {
+          if (producto.product.name == data[key].name) {
+            data[key].stock -= producto.qty;
+          }
+        });
+      });
+      this.data.putProducts(data, () => {        
+        this.router.navigate(['/spa/catalogo']);
+        this.productos = [];
+      });
+    });
+        
   };
 }

@@ -21,6 +21,13 @@ export class CatalogComponent implements OnInit {
     this.products = this.productsInDb;
   }
 
+  llenar() {
+    console.log('llenando')
+    this.products.forEach((produ) => {
+      this.data.postProducts(produ);
+    });
+  }
+
   change(event) {       
     this.products = [];
     this.productsInDb.forEach((product) => {

@@ -21,5 +21,8 @@ export class HttpService {
   getUsers() {
     return this.http.get('https://farm-store-3487f.firebaseio.com/Users.json');
   } 
+  putProducts(body) {
+    return this.http.put('https://farm-store-3487f.firebaseio.com/Products.json',body)
+  }
     
 }
