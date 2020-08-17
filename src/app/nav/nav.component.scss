@@ -2,3 +2,12 @@
     font-size: 2em;
     margin-left: 1em;
 }
+.notification-badge {
+    position: relative;
+    right: -20px;
+    top: -80px;
+    color: white;
+    margin: 0 -.8em;
+    border-radius: 50%;
+    padding: 5px 10px;
+}

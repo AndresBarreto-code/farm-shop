@@ -17,6 +17,7 @@ import { DataService } from './services/data.service';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ImageSizePipe } from './pipes/image-size.pipe';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { ShopComponent } from './shop/shop.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ViewProductComponent } from './view-product/view-product.component';
     ProductCardComponent,
     CatalogComponent,
     ImageSizePipe,
-    ViewProductComponent
+    ViewProductComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

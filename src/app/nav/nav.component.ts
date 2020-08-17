@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  notification: Boolean = false;
+  qtyProducts: number = 0;
+
+  constructor(private data: DataService) { }
 
   ngOnInit(): void {
+    this.data.currentMessage.subscribe(message => {
+      this.qtyProducts = message;
+      this.notification = message > 0;
+    })
   }
 
 }

@@ -6,7 +6,7 @@
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a [routerLink]="['/spa/catalogo']"><i class="material-icons">view_comfy</i></a></li>
-      <li><a [routerLink]="['/spa/carrito']"><i class="material-icons">shopping_cart</i></a></li>
+      <li><a [routerLink]="['/spa/carrito']"><i class="material-icons">shopping_cart</i><small class="notification-badge red" *ngIf="this.notification">{{qtyProducts}}</small></a></li>
       <li><a [routerLink]="['/spa/xyz']"><i class="material-icons">move_to_inbox</i></a></li>
       <li><a [routerLink]="['']"><i class="material-icons">keyboard_tab</i></a></li>
     </ul>
@@ -15,7 +15,7 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a [routerLink]="['/spa/catalogo']">Catalogo</a></li>
-    <li><a [routerLink]="['/spa/carrito']">Carrito de compras</a></li>
+    <li><a [routerLink]="['/spa/carrito']">Carrito de compras<span class="new badge red white-letter" *ngIf="this.notification">{{qtyProducts}}</span></a></li>
     <li><a [routerLink]="['/spa/xyz']">Cosa que aun no se que es</a></li>
     <li><a [routerLink]="['']">Log out</a></li>
   </ul>
