@@ -20,5 +20,9 @@ export class ShopComponent implements OnInit {
       this.total += producto.product.price * producto.qty;
     })
   }
-
+  pagar() {
+    this.data.postShop();
+    this.productos = [];
+    
+  };
 }

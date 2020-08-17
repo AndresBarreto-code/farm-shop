@@ -31,6 +31,11 @@ export class DataService {
       () => { }
     )
   };
+  postShop() {
+    this.httpService.postInfo('Compras', this.shop).subscribe((data: Response) => console.log(data));
+    this.shop = [];
+    this.notificationMessage.next(this.shop.length);
+  };
   getProducts(callback) {
     this.httpService.getProducts().subscribe(callback);
   };
